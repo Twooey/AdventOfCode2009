@@ -31,7 +31,7 @@ def opcodecomp(day2_input, noun = None, verb = None):
     return day2_input[0]
 
 
-part1 = opcodecomp(day2_data,12,2)
+part1 = opcodecomp(day2_data[:],12,2)
 
 
 print("Part 1: ", part1)
@@ -40,7 +40,7 @@ def part2():
     for noun in range(1,100):
         for verb in range(1,100):
             #print(noun, verb)
-            if opcodecomp(day2_data, noun, verb) == 19690720:
+            if opcodecomp(day2_data[:], noun, verb) == 19690720:
                 print("Part 2", 100*noun+verb)
                 break
 
