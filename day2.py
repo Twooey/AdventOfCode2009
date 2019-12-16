@@ -23,10 +23,8 @@ def opcodecomp(day2_input, noun = None, verb = None):
         if operator == 99:
             break
         elif  operator == 1:
-            print("Break1")
             day2_input[day2_input[i+3]] = position1 + position2
         elif operator == 2:
-            print("Break2")
             day2_input[day2_input[i+3]] = position1 * position2
 
 
