@@ -1,4 +1,4 @@
-
+import re
 
 
 with open("day3.in", "r") as f:
@@ -6,3 +6,8 @@ with open("day3.in", "r") as f:
 
 print(wires_points[0])
 
+for element in wires_points:
+    match = re.match("([\d]+)([\w]+)", element)
+
+
+print((match.groups(0)))
