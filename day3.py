@@ -10,4 +10,3 @@ for element in wires_points:
     match = re.match("([\d]+)([\w]+)", element)
 
 
-print((match.groups(0)))
